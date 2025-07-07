@@ -1,0 +1,81 @@
+.header{
+    height: 34vw;
+    margin: 30px auto ;
+    background: url('/header_img.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p{
+    color: #fcc37d; /* Vibrant orange for paragraph */
+    font-size: 1vw;
+    line-height: 1.5;
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    /* Changed to a subtle linear gradient for a "real" effect */
+    background: linear-gradient(to bottom, #FFF3E0, #FFE0B2); /* Light cream to light orange */
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.header-contents button:hover{
+    /* Slightly darker gradient and more pronounced shadow on hover */
+    background: linear-gradient(to bottom, #FFE0B2, #FFCC80);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.header-contents button:active {
+    /* Even darker gradient, no shadow, and pushed down on click */
+    background: linear-gradient(to bottom, #FFCC80, #FFB74D);
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 750px){
+    .header-contents {
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
