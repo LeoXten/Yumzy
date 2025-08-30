@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //Placing user order from frontend
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "http://localhost:5174"; // Ensure this matches your frontend URL
+    const frontend_url = "https://yumzy-frontend-kafv.onrender.com/"; // Ensure this matches your frontend URL
 
     try {
         const newOrder = new orderModel({
