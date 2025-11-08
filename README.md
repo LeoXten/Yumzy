@@ -1,6 +1,8 @@
 🔥 Yumzy - Food Delivery App
 Yumzy is a modern and efficient food delivery web application that connects users with their favorite meals in just a few clicks. Designed with a clean UI, real-time order tracking, and secure payment processing, Yumzy aims to deliver food fast, fresh, and hassle-free.
 
+Live - https://yumzy-frontend-kafv.onrender.com/
+
 ✨ Features
 🍔 Browse Food Items – Explore a curated list of delicious meals.
 
